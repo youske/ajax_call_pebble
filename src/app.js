@@ -28,11 +28,11 @@ main.callAjax = function( callback )
    },
    function(data, status, request) {
      console.log('Quote of the day is: ' + data.contents.quote);
-     callback( error, data);
+     callback( null,data );
    },
    function(error, status, request) {
      console.log('The ajax request failed: ' + error);     
-     callback( error, data );
+     callback( error,status );
    }
  );
 

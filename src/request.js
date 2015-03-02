@@ -1,3 +1,4 @@
+var ajax = require('ajax');
 
 var callAjax = function( callback ) 
 {
